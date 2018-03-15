@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html>
+<!-- INÍCIO HEAD -->	
+<head>
+<title>Lucene Lanches | E-Commerce online de Laches, SnakBar</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<link href="//netdna.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+<script src="//netdna.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+<script src="//code.jquery.com/jquery-1.11.1.min.js"></script>
+<meta name="keywords" content="Lucene Laches, Lucene, Lanches, Araraqura, Araraquara e região, fast food, SnackNar, snak, snak restaurante" />
+<script type="application/x-javascript"> addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false); function hideURLbar(){ window.scrollTo(0,1); } </script>
+<script src="//code.jquery.com/jquery-1.11.1.min.js"></script>
+<link href="css/bootstrap.css" type="text/css" rel="stylesheet" media="all">
+<link href="css/style.css" type="text/css" rel="stylesheet" media="all">
+<script src="js/jquery.min.js"></script>
+<script type="text/javascript" src="js/bootstrap-3.1.1.min.js"></script>
+<script src="js/simpleCart.min.js"> </script>
+</head>
+<!-- FIM HEAD -->	
+
+<!-- INÍCIO BODY | DETALHES DO PEDIDO -->		
+<body>
+	<!--HEADER-->
+	<div class="header">
+		<div class="container">			
+			<div id="logo">	
+				<h1 id="logo_txt"><a  href="index.html">Lucene Lanches</a></h1>	
+				<img src="images/logo_placa.png" alt="logo Lucene Lanches"/>
+			</div>
+			<!--INÍCIO NAV-->
+			<nav class="navbar navbar-default">
+			  <div class="container-fluid">
+			  <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+		        <span class="sr-only">Toggle navigation</span>
+		        <span class="icon-bar"></span>
+		        <span class="icon-bar"></span>
+		        <span class="icon-bar"></span>
+		      </button>
+			    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+			      <ul class="nav navbar-nav">
+			        <li><a href="index.html">HOME</a></li>
+			        <li><a href="realizarPedido.html">FAZER PEDIDO</a></li>
+			        <li><a href="detalhesPedido.html">DETALHES PEDIDO</a></li>
+			        <li><a href="entregaPedido.html">ENTREGA PEDIDO</a></li>			        
+			      </ul>      
+			    </div>
+			  </div>
+			</nav>
+			<!--FIM NAV-->
+		</div>
+	</div>	
+	<!--FIM HEADER-->	
+
+	<div class="banner" style="min-height:300px">
+        <!--INÍCIO CONTAINER-->
+        <div class="container">
+            <h2 class="hdng">Detalhes de seu <span>pedido</span></h2><br/>
+            <p>Snackbar com Hanbúguer 100% artesanal.</p>  		
+		</div><!--FIM CONTAINER-->
+	</div><!--FIM BANNER-->	
+
+	<!--INÍCIO ÁREA BANNER-->
+	<div class="container-fluid">
+		<div id="detalhesPedido" class="col-md-6">	
+			<h4>Olá <"Nome do Cliente"></h4>
+			<p>O valor total do seu pedido é de <"valor"></p>
+			<h4>Qual a forma de pagamento?</h4>		 
+	        <div id="pagamento" class="col-md-6" > 
+	            <label class="radio-inline" for="radios-0">
+	              <input name="radios" id="radios-0" value="1" checked="checked" type="radio">
+	              Crédito
+	            </label> 
+	            <label class="radio-inline" for="radios-1">
+	              <input name="radios" id="radios-1" value="2" type="radio">
+	              Débito
+	            </label> 
+	            <label class="radio-inline" for="radios-2">
+	              <input name="radios" id="radios-2" value="3" type="radio">
+	              Dinheiro
+	            </label>
+	        </div><br />
+	        <h4>Precisa de troco?</h4>	
+	        <div id="troco" class="col-md-6">
+	        	<label class="radio-inline" for="radios-1">
+	              <input name="radios" id="radios-1" value="2" type="radio">
+	              Sim
+	            </label> 
+	            <label class="radio-inline" for="radios-2">
+	              <input name="radios" id="radios-2" value="3" type="radio">
+	              Não
+	            </label>
+	        </div>
+	        <h4>Seu pedido já está em andamento.</h4>
+	    </div>
+	
+
+		<div id="detalhesPedido2" class="col-md-6">		
+	        <h4><b>Use nossa calculadora caso queira dividir o valor:</b></h4>	
+	        <h4>Seu pedido já está em andamento.</h4>	
+	        <div class="form-detalhes">
+			  <label class="col-2 col-form-label">Valor do Pedido</label>
+			  <div class="col-4">
+			    <input class="form-control" type="text" value="" id="text-input">
+			  </div>
+			  <label class="col-2 col-form-label">Quantidade de Pessoas</label>
+			  <div class="col-4">
+			    <input class="form-control" type="text" value="" id="text-input">
+			  </div>
+			  <label class="col-2 col-form-label">Valor por pessoa</label>
+			  <div class="col-4">
+			    <input class="form-control" type="text" value="" id="text-input">
+			  </div>
+			</div>
+		</div>
+	</div>
+
+
+
+
+		</div>
+	</div>
+
+	<!--INÍCIO FOOTER-->
+	<div class="footer">
+		<div class="container">
+			<div class="footer-grids">
+				<div class="col-md-2 footer-grid">
+					<h4>HAMBÚRGUERES</h4>
+					<ul>
+						<li><a href="#">SUPER PUNCH BURGER</a></li>
+						<li><a href="#">PUNCH BURGER</a></li>
+						<li><a href="#">DUNK BURGER</a></li>
+						<li><a href="#">IPPON BURGER</a></li>
+						<li><a href="#">STRIKE BURGER</a></li>
+					</ul>
+				</div>
+				<div class="col-md-2 footer-grid">
+					<h4>MILK SHAKES</h4>
+					<ul>
+						<li><a href="#">BANANA COM CANELA</a></li>
+						<li><a href="#">MORANGO</a></li>
+						<li><a href="#">CHOCOLATE</a></li>
+						<li><a href="#">NUTELLA</a></li>
+						<li><a href="#">OVOMALTINE</a></li>
+					</ul>
+				</div>
+				<div class="col-md-3 footer-grid">
+					<h4>ACOMPANHAMENTOS</h4>
+					<ul>
+						<li><a href="#">BATATA FRITA</a></li>
+						<li><a href="#">BATATA CANOA</a></li>
+						<li><a href="#">BATATA RÚSTICA</a></li>
+						<li><a href="#">BATATA COM QUEIJO E BACON</a></li>
+						<li><a href="#">BATATA RÚSTICA COM CHEDDAR</a></li>
+					</ul>
+				</div>
+				<div class="col-md-2 footer-grid">
+					<h4>SOBREMESAS</h4>
+					<ul>
+						<li><a href="#">SORVETE COM BROWNIE NO COPÃO.</a></li>
+						<li><a href="#">SORVETE NO COPO</a></li>
+						<li><a href="#">BROWNIE COM NUTELLA</a></li>
+						<li><a href="#">BROWNIE COM SORVETE</a></li>
+					</ul>
+				</div>
+				<div class="col-md-3 footer-grid icons">
+					<h4>REDES SOCIAIS</h4>
+					<ul>
+						<li><a href="#"><img src="images/i1.png" alt=""/>Facebook</a></li>
+						<li><a href="#"><img src="images/i2.png" alt=""/>Twitter</a></li>
+						<li><a href="#"><img src="images/i3.png" alt=""/>GOOGLE PLUS</a></li>
+						<li><a href="#"><img src="images/i4.png" alt=""/>PINTEREST</a></li>
+					</div>
+				</div>
+				<div class="clearfix"></div>
+			</div>
+		</div>		
+	</div>
+	<!--FIM FOOTER-->
+	<!--INÍCIO FOOTER-BOTTOM-->
+	<div class="footer-bottom">
+		<div class="container">
+			<p> ©2018 Lucene Lanches. todos os direitos reservados</p>
+		</div>
+	</div>
+	<!--FIM FOOTER-BOTTOM-->
+</body>
+<!-- FIM BODY -->	
+</html>

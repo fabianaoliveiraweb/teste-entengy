@@ -1,0 +1,307 @@
+<!DOCTYPE html>
+<html>
+<!-- INÍCIO HEAD -->	
+<head>
+<title>Lucene Lanches | E-Commerce online de Laches, SnakBar</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<link href="//netdna.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+<script src="//netdna.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+<script src="//code.jquery.com/jquery-1.11.1.min.js"></script>
+<meta name="keywords" content="Lucene Laches, Lucene, Lanches, Araraqura, Araraquara e região, fast food, SnackNar, snak, snak restaurante" />
+<script type="application/x-javascript"> addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false); function hideURLbar(){ window.scrollTo(0,1); } </script>
+<script src="//code.jquery.com/jquery-1.11.1.min.js"></script>
+<link href="css/bootstrap.css" type="text/css" rel="stylesheet" media="all">
+<link href="css/style.css" type="text/css" rel="stylesheet" media="all">
+<script src="js/jquery.min.js"></script>
+<script type="text/javascript" src="js/bootstrap-3.1.1.min.js"></script>
+<script src="js/simpleCart.min.js"> </script>
+</head>
+<!-- FIM HEAD -->	
+
+<!-- INÍCIO BODY | REALIZAR PEDIDO -->		
+<body>
+	<!--HEADER-->
+	<div class="header">
+		<div class="container">			
+			<div id="logo">	
+				<h1 id="logo_txt"><a  href="index.html">Lucene Lanches</a></h1>	
+				<img src="images/logo_placa.png" alt="logo Lucene Lanches"/>
+			</div>
+			<!--INÍCIO NAV-->
+			<nav class="navbar navbar-default">
+			  <div class="container-fluid">
+			  <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+		        <span class="sr-only">Toggle navigation</span>
+		        <span class="icon-bar"></span>
+		        <span class="icon-bar"></span>
+		        <span class="icon-bar"></span>
+		      </button>
+			    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+			      <ul class="nav navbar-nav">
+			        <li><a href="index.html">HOME</a></li>
+			        <li><a href="realizarPedido.html">FAZER PEDIDO</a></li>
+			        <li><a href="detalhesPedido.html">DETALHES PEDIDO</a></li>
+			        <li><a href="entregaPedido.html">ENTREGA PEDIDO</a></li>			        
+			      </ul>      
+			    </div>
+			  </div>
+			</nav>
+			<!--FIM NAV-->
+		</div>
+	</div>	
+	<!--FIM HEADER-->	
+
+	<div class="banner">
+        <!--INÍCIO CONTAINER-->
+        <div class="container">
+            <h2 class="hdng">Realize seu <span>pedido</span> aqui</h2><br/>
+            <p>Snackbar com Hanbúguer 100% artesanal.</p>
+            <div class="banner-text" class="col-md-6">			
+				<img src="images/hamburguers/hamb_03.png" style="margin-top:-3em;" alt="hamburguer" class="img-responsive" />	
+			</div>
+			<!--INÍCIO ÁREA PEDIDOS-->
+			<section id="pedido">
+	            <h1>Preencha os campos para realizar seu pedido</h1>
+	            <form role="form" action="javascript:;" method="post" id="pedido-form" autocomplete="off">
+	                <!--NOME-->
+	                <div class="form-group"> 
+	                  <div class="col-md-12">
+	                  	<input id="nome" name="nome" placeholder="Nome" class="form-control input-md" type="text">                
+	                  </div>
+	                </div>              
+	                <!--ENDEREÇO-->
+	                <div class="form-group">
+	                  <div class="col-md-12">
+	                  	<input id="endereco" name="endereco" placeholder="Endereco" class="form-control input-md" type="text">                
+	                  </div>
+	                </div>
+	                <!--LISTA DE LANCHES-->
+	                <div class="form-group">
+	                  <label class="col-md-4 control-label" for="buttondropdownPedido"></label>
+	                  <div class="col-md-12">
+	                    <div class="input-group">
+	                      <input id="buttondropdownPedido" name="buttondropdownPedido" class="form-control" 
+	                            placeholder="Lista de lanches" type="text">
+	                      <div class="input-group-btn">
+	                        <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown">
+	                          selecione
+	                          <span class="caret"></span>
+	                        </button>
+	                        <ul class="dropdown-menu pull-right">
+	                          <li><a href="#">SUPER PUNCH BURGER</a></li>
+	                          <li><a href="#">PUNCH BURGER</a></li>
+	                        </ul>
+	                      </div>
+	                    </div>
+	                  </div>
+	                </div>
+	                <!--TIPO DE PÃO-->
+	                <div class="form-group">
+	                  <label class="col-md-4 control-label" for="buttondropdownPaes">Tipo de Pão</label>
+	                  <div class="col-md-8">
+	                    <div class="input-group">
+	                      <input id="buttondropdownPaes" name="buttondropdownPaes"  class="form-control" placeholder="" type="text" >
+	                      <div class="input-group-btn">
+	                        <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown">
+	                          selecione
+	                          <span class="caret"></span>
+	                        </button>
+	                        <ul class="dropdown-menu pull-right">
+	                          <li><a href="#">Pão de hamburguer</a></li>
+	                          <li><a href="#">Pão Francês</a></li>
+	                        </ul>
+	                      </div>
+	                    </div>
+	                  </div>
+	                </div>
+	                <!--QUEIJO-->
+	                <div class="form-group">
+	                  <label class="col-md-4 control-label" for="buttondropdownQueijo">Queijo</label>
+	                  <div class="col-md-8">
+	                    <div class="input-group">
+	                      <input id="buttondropdownQueijo" name="buttondropdownQueijo" class="form-control" placeholder="" type="text">
+	                      <div class="input-group-btn">
+	                        <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown">
+	                          selecione
+	                          <span class="caret"></span>
+	                        </button>
+	                        <ul class="dropdown-menu pull-right">
+	                          <li><a href="#">1</a></li>
+	                          <li><a href="#">2</a></li>
+	                        </ul>
+	                      </div>
+	                    </div>
+	                  </div>
+	                </div>
+	                <!--RECHEIO-->
+	                <div class="form-group">
+	                  <label class="col-md-4 control-label" for="buttondropdownRecheio">Recheio</label>
+	                  <div class="col-md-8">
+	                    <div class="input-group">
+	                      <input id="buttondropdownRecheio" name="buttondropdownRecheio" class="form-control" placeholder="" type="text">
+	                      <div class="input-group-btn">
+	                        <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown">
+	                          selecione
+	                          <span class="caret"></span>
+	                        </button>
+	                        <ul class="dropdown-menu pull-right">
+	                          <li><a href="#">1</a></li>
+	                          <li><a href="#">2</a></li>
+	                        </ul>
+	                      </div>
+	                    </div>
+	                  </div>
+	                </div>
+	                <!--SALADAS-->
+	                <div class="form-group">
+	                  <label class="col-md-4 control-label" for="radios">Saladas</label>
+	                  <div class="col-md-8"> 
+	                    <label class="radio-inline" for="radios-0">
+	                      <input name="radios" id="radios-0" value="1" checked="checked" type="radio">
+	                      Alface
+	                    </label> 
+	                    <label class="radio-inline" for="radios-1">
+	                      <input name="radios" id="radios-1" value="2" type="radio">
+	                      Rúcula
+	                    </label> 
+	                    <label class="radio-inline" for="radios-2">
+	                      <input name="radios" id="radios-2" value="3" type="radio">
+	                      Acelga
+	                    </label>
+	                  </div>
+	                </div>
+	                <!--MOLHOS-->
+	                <div class="form-group">
+	                  <label class="col-md-4 control-label" for="checkboxesMOlhos">Molhos</label>
+	                  <div class="col-md-8">
+	                    <label class="checkbox-inline" for="checkboxesMOlhos-0">
+	                      <input name="checkboxesMOlhos" id="checkboxesMOlhos-0" value="1" type="checkbox">
+	                      Italiano
+	                    </label>
+	                    <label class="checkbox-inline" for="checkboxesMOlhos-1">
+	                      <input name="checkboxesMOlhos" id="checkboxesMOlhos-1" value="2" type="checkbox">
+	                      Apimentado
+	                    </label>
+	                  </div>
+	                </div>
+	                <!--TEMPEROS-->
+	                <div class="form-group">
+	                  <label class="col-md-4 control-label" for="checkboxesTemperos">Temperos</label>
+	                  <div class="col-md-8">
+	                    <label class="checkbox-inline" for="checkboxesTemperos-0">
+	                      <input name="checkboxesTemperos" id="checkboxesTemperos-0" value="1" type="checkbox">
+	                      Pimenta
+	                    </label>
+	                    <label class="checkbox-inline" for="checkboxesTemperos-1">
+	                      <input name="checkboxesTemperos" id="checkboxesTemperos-1" value="2" type="checkbox">
+	                      Sal
+	                    </label>
+	                    <label class="checkbox-inline" for="checkboxesTemperos-2">
+	                      <input name="checkboxesTemperos" id="checkboxesTemperos-2" value="3" type="checkbox">
+	                      Orégano
+	                    </label>
+	                  </div>
+	                </div>
+	                <!--TEXT ÁREA PEDIDO-->
+	                <div class="form-group">
+	                  <label class="col-md-4 control-label" for="textareaPedido"></label>
+	                  <div class="col-md-12">                     
+	                    <textarea class="form-control" id="textareaPedido" name="textareaPedido">
+
+	                    </textarea>
+	                  </div>
+	                </div>
+	                <!--BTN VALOR LANCHE-->
+	                <div class="form-group-lanche">
+	                  <div class="col-md-12">
+	                    <button id="btnValorLache" name="btnValorLache" class="btn btn-primary">Valor do Lanche</button>
+	                  </div>
+	                </div>
+	                <!--BTN SALVAR-->
+	                <div class="form-group-salvar">
+	                  <div class="col-md-12">
+	                    <button id="btns" name="btns" class="btn btn-success">Salvar</button>
+	                    <button id="button2id" name="button2id" class="btn btn-warning">Finalizar</button>
+	                  </div>
+	                </div>
+	                <!--BTN VALOR PEDIDO TOTAL-->
+	                <div class="form-groupTotal">
+	                  <div class="col-md-12">
+	                    <button id="singlebutton" name="singlebutton" class="btn btn-success">Valor do Pedido</button>
+	                  </div>
+	                </div>  
+	            </form>
+	            <a href="javascript:;" class="forget" data-toggle="modal" data-target=".forget-modal">Esqueceu a senha?</a>
+	            <hr>
+			</section><!--FIM ÁREA PEDIDOS-->
+		</div><!--FIM CONTAINER-->
+	</div><!--FIM BANNER-->	
+
+	<!--INÍCIO FOOTER-->
+	<div class="footer">
+		<div class="container">
+			<div class="footer-grids">
+				<div class="col-md-2 footer-grid">
+					<h4>HAMBÚRGUERES</h4>
+					<ul>
+						<li><a href="#">SUPER PUNCH BURGER</a></li>
+						<li><a href="#">PUNCH BURGER</a></li>
+						<li><a href="#">DUNK BURGER</a></li>
+						<li><a href="#">IPPON BURGER</a></li>
+						<li><a href="#">STRIKE BURGER</a></li>
+					</ul>
+				</div>
+				<div class="col-md-2 footer-grid">
+					<h4>MILK SHAKES</h4>
+					<ul>
+						<li><a href="#">BANANA COM CANELA</a></li>
+						<li><a href="#">MORANGO</a></li>
+						<li><a href="#">CHOCOLATE</a></li>
+						<li><a href="#">NUTELLA</a></li>
+						<li><a href="#">OVOMALTINE</a></li>
+					</ul>
+				</div>
+				<div class="col-md-3 footer-grid">
+					<h4>ACOMPANHAMENTOS</h4>
+					<ul>
+						<li><a href="#">BATATA FRITA</a></li>
+						<li><a href="#">BATATA CANOA</a></li>
+						<li><a href="#">BATATA RÚSTICA</a></li>
+						<li><a href="#">BATATA COM QUEIJO E BACON</a></li>
+						<li><a href="#">BATATA RÚSTICA COM CHEDDAR</a></li>
+					</ul>
+				</div>
+				<div class="col-md-2 footer-grid">
+					<h4>SOBREMESAS</h4>
+					<ul>
+						<li><a href="#">SORVETE COM BROWNIE NO COPÃO.</a></li>
+						<li><a href="#">SORVETE NO COPO</a></li>
+						<li><a href="#">BROWNIE COM NUTELLA</a></li>
+						<li><a href="#">BROWNIE COM SORVETE</a></li>
+					</ul>
+				</div>
+				<div class="col-md-3 footer-grid icons">
+					<h4>REDES SOCIAIS</h4>
+					<ul>
+						<li><a href="#"><img src="images/i1.png" alt=""/>Facebook</a></li>
+						<li><a href="#"><img src="images/i2.png" alt=""/>Twitter</a></li>
+						<li><a href="#"><img src="images/i3.png" alt=""/>GOOGLE PLUS</a></li>
+						<li><a href="#"><img src="images/i4.png" alt=""/>PINTEREST</a></li>
+					</div>
+				</div>
+				<div class="clearfix"></div>
+			</div>
+		</div>		
+	</div>
+	<!--FIM FOOTER-->
+	<!--INÍCIO FOOTER-BOTTOM-->
+	<div class="footer-bottom">
+		<div class="container">
+			<p> ©2018 Lucene Lanches. todos os direitos reservados</p>
+		</div>
+	</div>
+	<!--FIM FOOTER-BOTTOM-->
+</body>
+<!-- FIM BODY -->	
+</html>
